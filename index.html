@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi CV</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        margin-top: 20px;
+      }
+      section {
+        margin-top: 30px;
+      }
+      h2 {
+        color: #4caf50;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      /* Estilos para el menú de navegación */
+      .main-nav {
+        background-color: #333; /* Color de fondo oscuro */
+        padding: 10px;
+        text-align: center;
+      }
+
+      .main-nav a {
+        color: white; /* Color de texto */
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .main-nav a:hover {
+        background-color: #555; /* Color de fondo en hover */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Orlando Aguilar Alvarez</h1>
+      <img
+        src="https://avatars.githubusercontent.com/u/187819457?v=4"
+        alt="Foto de perfil"
+        class="profile-pic"
+      />
+    </header>
+    <!-- Menú de navegación con clase "main-nav" -->
+    <nav class="main-nav">
+      <a href="index.html">Mi CV</a>
+      <a href="fútbol.html">Fútbol</a>
+      <a href="viajes.html">Viajes</a>
+    </nav>
+    <div class="container">
+      <!-- Descripción -->
+      <section id="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          Soy un profesional apasionado por el desarrollo web aprendiendo de
+          nuevas tecnologías como lo son HTML y CSS, y en búsqueda constante de
+          nuevos retos.
+        </p>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML (en progreso)</li>
+          <li>CSS (en progreso)</li>
+          <li>JavaScript (en progreso)</li>
+          <li>Trabajo en equipo</li>
+        </ul>
+      </section>
+
+      <!-- Experiencia -->
+      <section id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+          <li>
+            <strong
+              >Estudiante de Desarrollo Web - Bécalos.mx (2024 -
+              Presente)</strong
+            >
+            <p>
+              Llevo 1 mes estudiando desarrollo web en la plataforma Bécalos.mx,
+              adquiriendo conocimientos en HTML, CSS y otras tecnologías
+              fundamentales.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Hobbies -->
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Natación</li>
+          <li>Basquetbol</li>
+          <li>Música</li>
+        </ul>
+      </section>
+
+      <!-- Formulario de Contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar-mensaje.html" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
